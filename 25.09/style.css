@@ -1,0 +1,51 @@
+body {
+    background: rgb(164, 182, 187)
+}
+
+main{
+    width: 800px;
+    margin-left: auto;
+    margin-left: auto;
+}
+header{
+    height: 200px;
+    background: rgb(243, 243, 243);
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+    
+    
+}
+
+nav{
+    width: 700px;
+}
+
+nav>ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-evenly
+
+
+}
+section{
+    display: flex;
+}
+aside, #right{
+width: 100px;
+height: 700px;
+background: rgb(228, 228, 228)
+}
+
+article{
+width: 700px;
+height: 700px;
+background: rgb(136, 117, 54)
+}
+
+footer {
+    height: 150px;
+    background: lightcyan
+}

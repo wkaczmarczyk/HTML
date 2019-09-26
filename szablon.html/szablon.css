@@ -1,0 +1,96 @@
+body {
+    background: rgb(164, 182, 187)
+}
+
+main{
+    
+    margin: 0 auto;
+    width: 1200px;
+    display: grid;
+    grid-template-rows: 30px 70px 250px 100px 100px 40px ;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-areas: 
+    "header header header header"
+    "header2  header2 header2 header2"
+    "header3 header33 header33 header34"
+    "header4  header4 header4 header4"
+    "header5 header5 header55 header55"
+    "footer footer footer footer";
+}
+
+header {
+    background: lightgray;
+    grid-area: header;
+}
+#header2 {
+    background: rgb(207, 101, 101);
+    grid-area: header2;
+}
+#header3 {
+    background: gray;
+    grid-area: header3;
+    }
+
+#header33 {
+    background: rgb(117, 104, 104);
+    grid-area: header33;
+    }
+
+#header34 {
+    background: rgb(163, 64, 64);
+    grid-area: header34;
+    }
+    
+#header4 {
+    background: lightgray;
+    grid-area: header4;
+}
+#header5 {
+    background: gray;
+    grid-area: header5;
+}
+#header55 {
+    background: rgb(109, 62, 62);
+    grid-area: header55;
+}
+footer {
+    background: darkgray;
+    grid-area: footer;
+}
+    @media (max-width:800px ) {
+        main {
+            width: 100%;
+            display: grid;
+            grid-template-rows: 60px 140px 300px 300px 300px 200px 120px 120px 80px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "header header "
+            "header2  header2 "
+            "header3 header33" 
+            "header34 header34"
+            "header4  header4" 
+            "header5 header5" 
+            "header55 header55"
+            "footer footer";
+        }
+        
+    }
+
+@media (max-width:500px ) {
+    main {
+        width: 100%;
+        display: grid;
+        grid-template-rows: 60px 140px 300px 300px 200px 120px 120px 80px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "header2"
+        "header3" 
+        "header33" 
+        "header34"
+        "header4 " 
+        "header5" 
+        "header55"
+        "footer";
+    }
+}

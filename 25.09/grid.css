@@ -1,0 +1,47 @@
+body {
+    background: rgb(164, 182, 187)
+}
+
+main{
+    
+    margin: 0 auto;
+    width: 1200px;
+    display: grid;
+    grid-template-rows: 1fr 100fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "aside article right"
+    "footer footer footer";
+
+}
+
+header {
+    background: lightgray;
+    grid-area: header;
+}
+
+aside {
+    background: gray;
+    grid-area: aside;
+}
+
+article {
+        background: darkgray;
+        grid-area: article;
+    }
+
+    #right {
+        background: black;
+        grid-area: right;
+    
+    }
+
+    footer {
+        background: darkgray;
+        grid-area: footer;
+    }
+
+    
+
+     
